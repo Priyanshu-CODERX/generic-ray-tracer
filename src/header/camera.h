@@ -11,6 +11,7 @@ class camera
         int image_width  = 100;  // Rendered image width in pixel count
         int samples_per_pixel = 10; // count of random samples for each pixel
         int max_depth = 10; // maximum number of ray bounces in a scene
+        double color_gamut = 0.5; // adjust color gamut of render
 
         void render(const hittable& world) {
             initialize();
@@ -99,7 +100,7 @@ class camera
             {
                 // lambertian distribution to scatter reflected rays proptional to cos(phi)
                 vec3 direction = rec.normal + random_on_hemisphere(rec.normal);
-                return 0.5 * ray_color(ray(rec.p, direction), depth-1, world);
+                return color_gamut * ray_color(ray(rec.p, direction), depth-1, world);
             }
 
             vec3 unit_direction = unit_vector(r.direction());
