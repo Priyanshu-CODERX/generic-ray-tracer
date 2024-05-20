@@ -1,0 +1,3 @@
+/Users/priyanshu/Desktop/PathTracer/CMakeFiles/Graphics.dir
+/Users/priyanshu/Desktop/PathTracer/CMakeFiles/edit_cache.dir
+/Users/priyanshu/Desktop/PathTracer/CMakeFiles/rebuild_cache.dir
