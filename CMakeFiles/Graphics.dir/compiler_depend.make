@@ -857,6 +857,7 @@ CMakeFiles/Graphics.dir/src/main.cc.o: src/main.cc \
   src/header/hittable.h \
   src/header/hittable_list.h \
   src/header/interval.h \
+  src/header/material.h \
   src/header/ray.h \
   src/header/sphere.h \
   src/header/vec3.h \
@@ -865,6 +866,8 @@ CMakeFiles/Graphics.dir/src/main.cc.o: src/main.cc \
 
 
 src/header/ray.h:
+
+src/header/material.h:
 
 src/header/interval.h:
 

@@ -830,6 +830,7 @@ CMakeFiles/Graphics.dir/src/main.cc.o: \
   /Users/priyanshu/Desktop/PathTracer/src/./header/ray.h \
   /Users/priyanshu/Desktop/PathTracer/src/./header/camera.h \
   /Users/priyanshu/Desktop/PathTracer/src/./header/hittable.h \
+  /Users/priyanshu/Desktop/PathTracer/src/./header/material.h \
   /Users/priyanshu/Desktop/PathTracer/src/./header/hittable_list.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/formatter.h \

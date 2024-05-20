@@ -858,6 +858,7 @@ CMakeFiles/Graphics.dir/src/main.cc.o
  /Users/priyanshu/Desktop/PathTracer/src/header/hittable.h
  /Users/priyanshu/Desktop/PathTracer/src/header/hittable_list.h
  /Users/priyanshu/Desktop/PathTracer/src/header/interval.h
+ /Users/priyanshu/Desktop/PathTracer/src/header/material.h
  /Users/priyanshu/Desktop/PathTracer/src/header/ray.h
  /Users/priyanshu/Desktop/PathTracer/src/header/sphere.h
  /Users/priyanshu/Desktop/PathTracer/src/header/vec3.h
