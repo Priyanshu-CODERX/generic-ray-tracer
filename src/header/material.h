@@ -56,10 +56,10 @@ class metal : public material {
         double fuzz;
 };
 
-class dieletric : public material
+class dielectric : public material
 {
     public:
-        dieletric(double refraction_index) : refraction_index(refraction_index) {};
+        dielectric(double refraction_index) : refraction_index(refraction_index) {};
 
         bool scatter(const ray& r_in, const hit_record& rec, color& attenuation, ray& scattered) const override
         {
@@ -74,7 +74,7 @@ class dieletric : public material
             bool cannot_refract = ri*sin_theta > 0;
             vec3 direction;
 
-            if(cannot_refract || reflectance(cos_theta, ri) > random_double())
+            if (cannot_refract || reflectance(cos_theta, ri) > random_double())
                 direction = reflect(unit_direction, rec.normal);
             else
                 direction = refract(unit_direction, rec.normal, ri);
@@ -88,10 +88,10 @@ class dieletric : public material
 
         static double reflectance(double cosine, double refraction_index)
         {
-            // using schlicks approximation for reflectance
-            auto r0 = (1-refraction_index) / (1+refraction_index);
-            r0 = r0 * r0;
-            return r0+(1-r0)*pow((1-cosine), 5);
+            // Use Schlick's approximation for computing accurate angled reflecttion.
+            auto r0 = (1 - refraction_index) / (1 + refraction_index);
+            r0 = r0*r0;
+            return r0 + (1-r0)*pow((1 - cosine),5);
         }
 };
 
