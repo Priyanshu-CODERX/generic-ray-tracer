@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/Users/priyanshu/Desktop/PathTracer/build",
-  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -o CMakeFiles/Graphics.dir/src/main.cc.o -c /Users/priyanshu/Desktop/PathTracer/src/main.cc",
-  "file": "/Users/priyanshu/Desktop/PathTracer/src/main.cc",
-  "output": "CMakeFiles/Graphics.dir/src/main.cc.o"
-}
-]
